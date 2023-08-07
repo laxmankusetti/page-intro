@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@100;200;800&family=Kumbh+Sans:wght@100;400;700&family=Plus+Jakarta+Sans:wght@500;800&family=Poppins:ital,wght@0,800;1,400;1,700&family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 97%);
+}
+
+nav{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none; 
+    color: hsl(0, 0%, 41%)
+}
+
+nav ul li a:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+.nav-items .main-navbar {
+    display: flex; 
+    width: max-content;
+    gap: 25px;
+}
+
+.nav-items{
+    margin-left: -400px;
+}
+
+.signup ul{
+    display: flex;
+    width: max-content;
+    gap: 25px;
+}
+
+.content{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.content-matter{
+    width: 45%;
+    margin-top: 95px;
+}
+
+.content-picture{
+    width: 40%;
+    height: 80%;
+    background-image: url('./images/image-hero-desktop.png');
+    background-size: cover;
+}
+
+
+.content-matter h1 span{
+    display: block;
+}
+
+h1{
+    font-size: 4em;
+}
+
+.content-matter p{
+    color: hsl(0, 0%, 41%);
+    margin-top: 40px;
+}
+
+.content-matter button{
+    padding: 15px 25px;
+    background-color: hsl(0, 0%, 8%); 
+    color: hsl(0, 0%, 98%);
+    border: none;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+.content-matter button:hover{
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 10px;
+}
+
+.adds img{
+    height: 25px;
+}
+
+.content-matter .adds{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+#register{
+    padding: 8px 12px; 
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+#arrow1, #arrow2{
+    cursor: pointer;
+}
+
+#arrow1:hover, #arrow2:hover{
+    background-color: rgb(237, 231, 231);
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.drop-down-one{
+    position: relative;
+}
+
+.features-ddl{
+    width: max-content;
+    height: auto;
+    padding: 15px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 20px rgb(191, 188, 188);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px; 
+    position: absolute;
+    left: -40px;
+    top: 25px;
+    font-size: 0.8em;
+}
+
+.drop-down-two{
+    position: relative;
+}
+
+.company-ddl{
+    width: max-content;
+    height: auto;
+    padding: 15px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 20px rgb(191, 189, 189);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px; 
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    font-size: 0.8em;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.features-ddl img{
+    margin-right: 10px;
+}
+
+.mob-menu{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .nav-items, .signup{
+        display: none;
+    }
+
+    .content{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -100px;
+    }
+
+    .content-matter{
+        width: 100%;
+        text-align: center;
+        margin-top: -250px;
+    }
+
+    .content-picture{
+        background-image: url('./images/image-hero-mobile.png');
+        background-size: cover;
+        width:100%;
+        height: 30%;
+    }
+
+    .content-matter h1 span{
+        display: inline;
+    }
+    
+    h1{
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    .content-matter p{
+        color: hsl(0, 0%, 41%);
+        margin-top: 20px;
+    }
+    
+    .content-matter button{
+        margin-top: 25px;
+    }
+
+    .adds img{
+        height: 20px;
+    }
+    
+    .content-matter .adds{
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+
+    .mob-menu{
+        width: 70%;
+        height: 100vh;
+        background-color: hsl(0, 0%, 100%);
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+
+    .mob-menu img{
+        margin-left: 75%;
+        margin-top: 15px;
+        
+        width: 40px;
+        height: 40px;
+    }
+
+    .mob-menu-items, .user-propmt{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-propmt{
+        text-align: center;
+    }
+
+    .mob-menu-items a, .user-propmt a{
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+        margin-top: 35px;
+        margin-left: 20px;
+        font-size: 1.5em;
+    }
+
+    .user-propmt ul li{
+        list-style: none;
+        margin-top: 35px;
+    }
+
+    .user-propmt ul li:last-of-type{
+        border: 2px solid hsl(0, 0%, 41%);
+        border-radius: 10px;
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+        margin-top: 35px;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="branding-logo">
+        </div>
+        <div class="nav-items">
+          <ul class="main-navbar">
+            <li class="drop-down-one">
+              <a href="#">Features</a>
+              <img src="./images/icon-arrow-down.svg" alt="arrow down" id="arrow1" onclick="dropDownOne()">
+              <ul class="features-ddl">
+                <li>
+                  <img src="./images/icon-todo.svg" alt="todo-icon">
+                  <a href="#">Todo List</a>
+                </li>
+                <li>
+                  <img src="./images/icon-calendar.svg" alt="calender-icon">
+                  <a href="#">Calender</a>
+                </li>
+                <li>
+                  <img src="./images/icon-reminders.svg" alt="remainders-icon">
+                  <a href="#">Remainders</a>
+                </li>
+                <li>
+                  <img src="./images/icon-planning.svg" alt="plannings-icon">
+                  <a href="#">Plannings</a>
+                </li>
+              </ul>
+            </li>
+            <li class="drop-down-two">
+              <a href="#">Company</a>
+              <img src="./images/icon-arrow-down.svg" alt="arrow down" id="arrow2" onclick="dropDownTwo()">
+              <ul class="company-ddl">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="signup">
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li id="register"><a href="#">Register</a></li>
+          </ul>
+        </div>
+        <div class="hamburger-menu">
+          <img src="./images/icon-menu.svg" alt="hamburger-menu" onclick="menuOpen()">
+        </div>
+      </nav>
+
+      <div class="mob-menu">
+        <img src="./images/icon-close-menu.svg" alt="close-icon" onclick="menuClose()">
+
+        <div class="mob-menu-items">
+          <a href="#">Features</a>
+          <a href="#">Company</a>
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+        </div>
+
+        <div class="user-propmt">
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content-matter">
+          <h1>Make <span>Remote Work</span></h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline processes, 
+            creat team rituals, and watch your productivity soar.
+          </p>
+          <button>Learn more</button>
+          <div class="adds">
+            <img src="./images/client-databiz.svg" alt="add-1">
+            <img src="./images/client-audiophile.svg" alt="add-2">
+            <img src="./images/client-maker.svg" alt="add-3">
+            <img src="./images/client-meet.svg" alt="add-4">
+          </div>
+        </div>
+        <div class="content-picture"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
